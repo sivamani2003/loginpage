@@ -1,0 +1,153 @@
+*{
+  margin: 0%;
+}
+body{
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+#bg{
+  position: absolute;
+  left: 300px;
+  top: 150px;
+}
+#circle {
+  height: 80px;
+  width: 80px;
+  background-color:white;
+  border-radius: 50%;
+  position: absolute;
+  left: 566px;
+  top: 127px;
+  border-radius: 50%;
+  animation: rotate 5s 1;
+}
+@keyframes rotate {
+  0% {
+      transform:rotate(0deg)
+      translate(600px)
+  }
+  100% {
+      transform:rotate(360deg)
+      translate(-600px)
+  }
+}
+#circle2{
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 250px;
+  bottom: 25%;
+  animation: circle 5s 1;
+}
+@keyframes circle{
+  0%{
+      transform:rotate(0deg)
+              translate(-165px)
+              rotate(0deg);
+  
+  }
+  100%{
+      transform:rotate(360deg)
+          translate(-165px)
+              rotate(-360deg);
+  }
+}
+#rectangle {
+  position: absolute;
+  width: 394px;
+  height: 454px;
+  left: 910px;
+  top: 130px;
+  background-color:white;
+  border-radius: 35px;
+}
+#one{
+  position: absolute;
+  width:300px;
+  height: 26px;
+  left: 980px;
+  top: 220px;
+  font-size: 30px;
+  color: black;
+}
+#siva{
+  position: absolute;
+  box-sizing: border-box;
+  left: 66.77%;
+  right: 5.47%;
+  top: 33.43%;
+  bottom: 47.48%;
+  margin: none;
+  border-color: white;
+}
+#vars,#shi{
+  border-radius: 3%;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
+  border-radius: 4px;
+}
+::placeholder{
+  color: rgba(0,0,0,0.7);
+  font-size: 20px;
+}
+#two{
+  position: absolute;
+  box-sizing: border-box;
+  left: 66.77%;
+  right: 5.47%;
+  top: 44.43%;
+  bottom: 42.48%;
+}
+#three{
+  position: absolute;
+  left: 1000px;
+  top: 560px;
+  width: 200px;
+  height: 40px;
+  background-color: black;
+  border-color: black;
+  border-radius: 30px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
+}
+#three:hover{
+  background-color: black;
+  color: gold;
+}
+#facebook{
+  position: absolute;
+  left: 980px;
+  top: 483px;
+  color: black;
+  font-size: 40px;
+}
+#gmail{
+  position: absolute;
+  color: black;
+  font-size: 40px;
+  left: 1050px;
+  top: 483px;
+}
+#github{
+  position: absolute;
+  color: black;
+  font-size: 40px;
+  left: 1120px;
+  top: 483px;
+}
+#google{
+  position: absolute;
+  color: black;
+  font-size: 40px;
+  left: 1190px;
+  top: 483px;
+}
+#result{
+  position: absolute;
+  left: 900px;
+  top:600px;
+  font-size: 30px;
+}

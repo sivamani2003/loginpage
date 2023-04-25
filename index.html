@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/a912fa542d.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="bg">
+            <img src="lol.png" width="150%"/>
+        </div>
+        <div id="circle"></div>
+        <div id="circle2"></div>
+        <div id="rectangle"></div>
+        <section>
+        <div id="one">
+            <p>Start your OS jouney</p>
+        </div>
+        <div id ="siva">
+                <input  id="vars" type="text" style="width:70%;height: 40px;" placeholder="Enter email"/>
+        </div>
+        <div id="two">
+            <input id="shi" type="text" style="width:70%;height: 40px;" placeholder="Enter Mobile Number"/>
+        </div>
+        <div >
+            <button id="three" type="submit">Submit</button>
+        </div>
+        <p id="result"></p>
+        <div id="facebook">
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+        <div id="gmail">
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div id="github">
+            <i class="fa-brands fa-github"></i>
+        </div>
+        <div id="google">
+            <i class="fa-brands fa-google"></i>
+        </div>
+        </section>
+        <script>
+            document.getElementById('three').addEventListener('click',userNameInput);
+            function userNameInput () {
+            var vars = document.getElementById('vars').value;
+            console.log(vars);
+            var shi = document.getElementById('shi').value;
+            var result=document.getElementById('result');
+            if(vars.length < 3){
+                result.textContent='Enter valid email';
+            }else {
+                result.textContent = 'Your email is: ' + vars + ' and your number is ' + shi;
+            }
+        }
+        </script>
+    </body>
+</html>
